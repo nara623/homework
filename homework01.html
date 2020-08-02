@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>원페이지 쇼핑몰</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        .product-deck {
+            width: 800px;
+            margin: auto;
+            font-family: 'Poor Story', cursive;
+        }
+        .order-form {
+            width: 600px;
+            margin: auto;
+        }
+        .card-price {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .mybtn {
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다!')
+        }
+    </script>
+</head>
+<body>
+<div class="product-deck">
+    <div class="card">
+        <img class="card-img-top"
+             src="https://file.mk.co.kr/meet/neds/2020/07/image_readtop_2020_720724_15947066984279037.jpg"
+             alt="Card image cap">
+        <div class="card-body">
+            <h1 class="card-title">페이크 라떼를 팝니다 <span class="card-price">가격: 3,000원/개</span></h1>
+
+            <p class="card-text">[라떼에 카페인이 없다?] 오늘도 커피에 찌들어가는 당신을 위한 구원템 ! 커피없이 검정보리로 만든 꼬숩달달 제로카페인, 1/4 칼로리 사기라떼,
+                [페이크라떼]를 소개합니다.</p>
+        </div>
+        <div class="order-form">
+            <h5 class="order-title">주문하기</h5>
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">주문자 이름</label>
+                <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputName" placeholder="주문자 이름">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputNumber" class="col-sm-2 col-form-label">수량</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputNumber" placeholder="수량을 선택하세요">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputAdress" class="col-sm-2 col-form-label">주소</label>
+                <div class="col-sm-10">
+                    <input type="Adress" class="form-control" id="inputAdress" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPhone" class="col-sm-2 col-form-label">전화번호</label>
+                <div class="col-sm-10">
+                    <input type="Phone" class="form-control" id="inputPhone" placeholder="">
+                </div>
+            </div>
+            <button onclick="order()" type="button" class="btn btn-primary mybtn">주문하기</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
